@@ -1,6 +1,8 @@
 # hotel-booking-calendar
 
-This project is a hotel booking calendar built using Vue.js 2 and Vuex. It displays weekly reservations for each apartment, allowing users to navigate forward, backward, and return to the current week. 
+This project is a hotel booking calendar built using Vue.js 2 and Vuex. It displays weekly reservations for each apartment, allowing users to navigate forward, backward, and return to the current week.
+
+Here is [DEMO LINK](https://hotel-booking-calendar-8966e.web.app/)
 
 ## Requirements
 
