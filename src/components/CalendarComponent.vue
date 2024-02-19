@@ -23,11 +23,12 @@
             :key="day"
             class="calendar__day-column"
           >
-            <div class="calendar__cell-head">{{ day }}</div>
+            <div class="calendar__cell-head" :class="{'calendar__focus': day ===  targetDay}">{{ day }}</div>
             <div
               v-for="apartment in apartments"
               :key="apartment.name"
               class="calendar__cell"
+              :class="{'calendar__focus': day ===  targetDay}"
             >
               <div
                 v-for="(reservation) in apartment.datesReservations[day]"
@@ -207,6 +208,9 @@ export default {
   font-weight: 600;
   color:#010157;
   border-left: 1px solid #ded6d6;
+}
+.calendar__focus {
+  background-color: #9ac2a284;
 }
 
 .calendar__cell {
